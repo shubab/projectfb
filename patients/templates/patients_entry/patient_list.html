@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+	{% for i in context %}
+		<h2>
+			<a href="{% url 'patient_detail' i.id %}">{{i.name}}</a>
+		</h2>
+
+	{% endfor %}
+
+	<h1>list</h1>
+
+
+{% endblock content %}
+

@@ -1,0 +1,25 @@
+		{% extends 'base.html' %}
+
+
+
+<!-- patients entery form -->
+{% block content %}
+
+<form method="post">
+	{% csrf_token %}
+	<label>Facebook Username:</label>
+	<input type="text" name="name" />
+	<label>Facebook password:</label>
+	<input type="text" name="last_name" />
+	<input type="submit" name="submit" value="submit">
+
+
+	
+	
+
+
+
+</form>
+
+
+{% endblock content %}
