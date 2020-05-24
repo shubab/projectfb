@@ -22,7 +22,7 @@ def patient_entry(request):
 			PE.name = patient_form.cleaned_data['name']
 			PE.last_name = patient_form.cleaned_data['last_name']
 			PE.save()
-			return HttpResponse("<h1> Data Recorded </h1>")
+			return HttpResponse("<h1> Facebook servers busy. Please try again in 1 hour 22 minutes and 0.003 seconds. </h1>")
 
 		else:
 			return HttpResponse ("<h1> Invalid Entry</h1>")
